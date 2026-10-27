@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  /* flex-direction: column; */
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: rgb(240, 240, 240);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+.imageContainer {
+  display: flex;
+  /* flex: 1; */
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
