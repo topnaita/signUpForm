@@ -13,23 +13,52 @@ body {
   padding: 0;
   margin: 0;
 }
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
 @font-face {
   font-family: my-cool-font;
   src: url(/images/norse/Norse.otf);
 }
-.title {
-  font-family: my-cool-font;
-  font-size: 200px;
-  font-weight: 900;
+
+.logAndTextContainer {
   position: absolute;
+  display: flex;
+  text-align: center;
+  background-color: hsl(0 0% 0% / 0);
+}
+.logOdin {
+  height: 100px;
+  width: 100px;
   text-align: center;
 }
+
+.title {
+  display: flex;
+  font-family: my-cool-font;
+  font-size: 100px;
+  font-weight: 900;
+  color: white;
+  /* position: absolute; */
+  /* height: 50px; */
+  /* text-align: center; */
+}
+
 span {
   font-style: italic;
 }
 .imageContainer {
   display: flex;
-  justify-content: center;
+
+  /* justify-content: center; */
   align-items: center;
   /* flex: 1; */
 }
