@@ -33,14 +33,17 @@ h6 {
 }
 
 .imageContainer {
+  display: flex;
   position: relative;
   width: 40%;
+  /* flex-wrap: wrap; */
 }
 
 .card-image {
   position: absolute;
   width: 100%;
-  z-index: -1;
+  height: 100vh;
+  /* z-index: -1; */
 }
 
 .cardBodyText {
@@ -76,12 +79,18 @@ h6 {
   /* flex-direction: column; */
   padding: 100px;
   background-color: hsl(0, 0%, 94%);
-  width: 100%;
+  width: 100vh;
+  font-weight: 900;
+  font-size: 25px;
 }
-
+span {
+  font-family: cursive;
+  font-weight: 900;
+}
 .topText {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  justify-content: center; */
+  /* flex-direction: column; */
 }
 
 /* .loginContainer {
