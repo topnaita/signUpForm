@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Login Page_files/style.css">
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="imageContainer">
+      <div>
+        <img src="./Login Page_files/sideimage.avif" alt="Background left image">
+      </div>
+      <div class="logAndTextContainer">
+        <div class="logOdin">
+          <img class="logOdin" src="./Login Page_files/odin-lined.png" alt="OdinProjectLogo">
+        </div>
+        <div class="title">
+          <h1>Odin</h1>
+        </div>
+      </div>
+    </div>
+    <div class="mainContainer">
+      <div class="topText">
+        <p>
+          This is not a real online service! you know you need something like
+          this in your life to help you realize your deepest dreams. sign up
+          <span>now</span> to get started
+        </p>
+        <br><br>
+
+        <p>you <span>know</span> you want to.</p>
+      </div>
+    </div>
+    <div class="loginContainer">
+      <p>Let's do this</p>
+      <form action="http://127.0.0.1:5500/example.com/path" method="post">
+        <div class="nameSection">
+          <label for="FirstName">First Name:</label>
+          <input type="text" id="FirstName" name="FirstName">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+        <div class="emailSection">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="userEmail">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="text" id="phoneNumber" name="phoneNumber">
+        </div>
+        <div class="passwordSection">
+          <label for="uderPassword">Password:</label>
+          <input type="password" id="uderPassword" name="userPassword">
+          <label for="confiPassword">Confirm Password:</label>
+          <input type="password" id="confiPassword" name="confirmPassword">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+
+      <div>
+        <button type="button">Create Account</button>
+
+        <p>
+          Already have an account? <span><a href="http://127.0.0.1:5500/Login">Login</a></span>
+        </p>
+      </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

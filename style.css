@@ -1,8 +1,8 @@
 body {
   display: flex;
   /* flex-direction: column; */
-  box-sizing: border-box;
-  min-height: 100vh;
+  /* box-sizing: border-box;
+  min-height: 100vh; */
   /* background-color: rgb(240, 240, 240); */
 }
 
@@ -29,62 +29,38 @@ h6 {
   src: url(/images/norse/Norse.otf);
 }
 
-.logAndTextContainer {
-  position: absolute;
-  display: flex;
-  text-align: center;
-  background-color: hsl(0 0% 0% / 0);
-}
-.logOdin {
-  height: 100px;
-  width: 100px;
-  text-align: center;
-}
-
-.title {
-  display: flex;
-  font-family: my-cool-font;
-  font-size: 100px;
-  font-weight: 900;
-  color: white;
-  /* position: absolute; */
-  /* height: 50px; */
-  /* text-align: center; */
-}
-
-span {
-  font-style: italic;
-}
 .imageContainer {
-  display: flex;
+  position: relative;
+  width: 100%;
+}
 
-  /* justify-content: center; */
+.card-image {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.cardBodyText {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  /* flex: 1; */
-}
-.mainContainer {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  background: black;
+  opacity: 0.6;
+  color: white;
+  top: 8rem;
+
+  font-size: 1.2em;
+  font-family: roboto;
+  height: 200px;
 }
 
-.topText {
-  display: flex;
-  flex-direction: column;
-  background-color: hsl(10, 10%, 90%);
-  padding: 100px;
-  font-weight: bold;
-  font-size: large;
+.odin {
+  font-family: my-cool-font;
+  font-size: 150px;
 }
 
-.loginContainer {
-  display: flex;
-  /* flex-direction: column; */
-  padding: 100px;
-}
-
-.nameSection,
-.passwordSection,
-.emailSection {
-  display: flex;
-  flex-direction: column;
+.logo {
+  height: 200px;
 }
