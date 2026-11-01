@@ -1,8 +1,9 @@
 body {
   display: flex;
+  min-height: 100vh;
   /* flex-direction: column; */
   /* box-sizing: border-box;
-  min-height: 100vh; */
+  
   /* background-color: rgb(240, 240, 240); */
 }
 
@@ -24,6 +25,8 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+/* Section background image right side */
+
 @font-face {
   font-family: my-cool-font;
   src: url(/images/norse/Norse.otf);
@@ -31,7 +34,7 @@ h6 {
 
 .imageContainer {
   position: relative;
-  width: 100%;
+  width: 40%;
 }
 
 .card-image {
@@ -42,6 +45,7 @@ h6 {
 
 .cardBodyText {
   display: flex;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -50,7 +54,6 @@ h6 {
   opacity: 0.6;
   color: white;
   top: 8rem;
-
   font-size: 1.2em;
   font-family: roboto;
   height: 200px;
@@ -60,7 +63,28 @@ h6 {
   font-family: my-cool-font;
   font-size: 150px;
 }
-
 .logo {
   height: 200px;
 }
+
+/* End */
+
+/*First section text container */
+
+.sectionAText {
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding: 100px;
+  background-color: hsl(0, 0%, 94%);
+  width: 100%;
+}
+
+.topText {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .loginContainer {
+  display: flex;
+  flex-direction: column;
+} */
