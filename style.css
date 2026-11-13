@@ -1,7 +1,7 @@
 body {
   display: flex;
 
-  /* min-height: 100vh; */
+  min-height: 100vh;
   /* box-sizing: border-box; */
 }
 
@@ -20,16 +20,6 @@ body {
 
 .imageContainer {
   position: relative;
-<<<<<<< HEAD
-=======
-  width: 40%;
-}
-
-.card-image {
-  position: absolute;
-  width: 100%;
-  z-index: -1;
->>>>>>> bc2aa2567131dba30216b508dfc164e8af32459b
 }
 
 .cardBodyText {
@@ -65,7 +55,6 @@ body {
   align-items: end;
   padding: 25px;
   background-color: hsl(0, 0%, 94%);
-<<<<<<< HEAD
   font-weight: 900;
   font-size: 25px;
 }
@@ -73,15 +62,6 @@ span {
   font-family: cursive;
   font-weight: 900;
 }
-=======
-  width: 100%;
-}
-
-.topText {
-  display: flex;
-  flex-direction: column;
-}
->>>>>>> bc2aa2567131dba30216b508dfc164e8af32459b
 
 /* .loginContainer {
   display: flex;
@@ -98,19 +78,42 @@ span {
 .loginContainer {
   display: flex;
   flex: 1;
+  box-shadow: 10px black;
+  background-color: hsl(0, 0%, 99%);
   /* flex-direction: column; */
 }
 .formContainer {
   display: flex;
+  padding: 20px;
+  align-items: end;
 }
 .formSectionLeft {
   display: flex;
   flex-direction: column;
+  margin: 20px;
 }
 
-.formSectionright {
+.formSectionRight {
   display: flex;
   flex-direction: column;
+  margin: 20px;
+}
+
+.formTextTop {
+  font-weight: 600;
+  font-size: larger;
+  padding: 20px;
+}
+
+#confiPassword,
+#email,
+#FirstName,
+#lastName,
+#phoneNumber,
+#uderPassword {
+  padding: 8px 15px;
+  border: 15px bold black;
+  border-radius: 6px;
 }
 
 /* EDN */
@@ -120,5 +123,5 @@ span {
 .containerButtonDown {
   display: flex;
   flex: 1;
-  background-color: aqua;
+  background-color: hsl(0, 0%, 94%);
 }
