@@ -39,35 +39,41 @@
       <!-- End -->
       <div class="loginContainer">
         <p>Let's do this</p>
-        <form action="example.com/path" method="post">
-          <div class="nameSection">
-            <label for="FirstName">First Name:</label>
-            <input type="text" id="FirstName" name="FirstName" />
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" />
+        <form class="formContainer" action="example.com/path" method="post">
+          <div>
+            <div class="formSectionright">
+              <label for="FirstName">First Name:</label><br />
+              <input type="text" id="FirstName" name="FirstName" /><br />
+              <label for="lastName">Last Name:</label><br />
+              <input type="text" id="lastName" name="lastName" /><br />
+              <label for="email">Email:</label><br />
+              <input type="email" id="email" name="userEmail" /><br />
+            </div>
           </div>
-          <div class="emailSection">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="userEmail" />
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="text" id="phoneNumber" name="phoneNumber" />
+          <div class="formSectionLeft">
+            <label for="phoneNumber">Phone Number:</label><br />
+            <input type="text" id="phoneNumber" name="phoneNumber" /><br />
+            <label for="uderPassword">Password:</label><br />
+            <input
+              type="password"
+              id="uderPassword"
+              name="userPassword"
+            /><br />
+            <label for="confiPassword">Confirm Password:</label><br />
+            <input
+              type="password"
+              id="confiPassword"
+              name="confirmPassword"
+            /><br />
           </div>
-          <div class="passwordSection">
-            <label for="uderPassword">Password:</label>
-            <input type="password" id="uderPassword" name="userPassword" />
-            <label for="confiPassword">Confirm Password:</label>
-            <input type="password" id="confiPassword" name="confirmPassword" />
-          </div>
-          <button type="submit">Submit</button>
         </form>
+      </div>
+      <div class="containerButtonDown">
+        <button type="button">Create Account</button>
 
-        <div>
-          <button type="button">Create Account</button>
-
-          <p>
-            Already have an account? <span><a href="Login">Login</a></span>
-          </p>
-        </div>
+        <p>
+          Already have an account? <span><a href="Login">Login</a></span>
+        </p>
       </div>
     </div>
   </body>

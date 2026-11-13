@@ -1,31 +1,17 @@
 body {
   display: flex;
-  min-height: 100vh;
-  /* flex-direction: column; */
-  /* box-sizing: border-box;
-  
-  /* background-color: rgb(240, 240, 240); */
+
+  /* min-height: 100vh; */
+  /* box-sizing: border-box; */
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
-/* 8. Avoid text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-/* Section background image right side */
 
 @font-face {
   font-family: my-cool-font;
@@ -35,20 +21,10 @@ h6 {
 .imageContainer {
   display: flex;
   position: relative;
-  width: 40%;
-  /* flex-wrap: wrap; */
-}
-
-.card-image {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  /* z-index: -1; */
 }
 
 .cardBodyText {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -75,11 +51,11 @@ h6 {
 /*First section text container */
 
 .sectionAText {
-  /* display: flex; */
-  /* flex-direction: column; */
-  padding: 100px;
+  display: flex;
+  flex: 1;
+  align-items: end;
+  padding: 25px;
   background-color: hsl(0, 0%, 94%);
-  width: 100vh;
   font-weight: 900;
   font-size: 25px;
 }
@@ -87,13 +63,43 @@ span {
   font-family: cursive;
   font-weight: 900;
 }
-.topText {
-  /* display: flex;
-  justify-content: center; */
-  /* flex-direction: column; */
-}
 
 /* .loginContainer {
   display: flex;
   flex-direction: column;
 } */
+.sectionForm {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+/* FORM SECTION NAME/PASSWORD */
+
+.loginContainer {
+  display: flex;
+  flex: 1;
+  /* flex-direction: column; */
+}
+.formContainer {
+  display: flex;
+}
+.formSectionLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.formSectionright {
+  display: flex;
+  flex-direction: column;
+}
+
+/* EDN */
+
+/* LAST SECTION BELOW. */
+
+.containerButtonDown {
+  display: flex;
+  flex: 1;
+  background-color: aqua;
+}
