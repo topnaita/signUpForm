@@ -44,7 +44,12 @@ body {
 .logo {
   height: 200px;
 }
-
+.Credit {
+  position: absolute;
+  bottom: 50px;
+  font-size: small;
+  color: azure;
+}
 /* End */
 
 /*First section text container */
@@ -57,6 +62,10 @@ body {
   background-color: hsl(0, 0%, 94%);
   font-weight: 900;
   font-size: 25px;
+}
+.Credit {
+  display: flex;
+  position: absolute;
 }
 span {
   font-family: cursive;
