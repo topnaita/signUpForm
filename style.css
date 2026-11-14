@@ -21,7 +21,10 @@ body {
 .imageContainer {
   position: relative;
 }
-
+.card-image {
+  display: flex;
+  flex: 1;
+}
 .cardBodyText {
   display: flex;
   justify-content: center;
@@ -45,10 +48,13 @@ body {
   height: 200px;
 }
 .Credit {
+  display: flex;
+
   position: absolute;
   bottom: 50px;
   font-size: small;
   color: azure;
+  margin: 10px;
 }
 /* End */
 
@@ -127,7 +133,10 @@ span {
   border: 15px bold black;
   border-radius: 6px;
 }
-
+input:user-invalid {
+  border: 2px solid red;
+  background-color: beige;
+}
 /* EDN */
 
 /* LAST SECTION BELOW. */
@@ -139,7 +148,7 @@ span {
   background-color: hsl(0, 0%, 94%);
 }
 .button {
-  background-color: hsl(147, 50%, 47%);
+  background-color: #596d48;
   padding: 8px 18px;
   border: 2px bold back;
   border-radius: 3px;
