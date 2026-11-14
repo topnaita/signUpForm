@@ -95,6 +95,7 @@ span {
   display: flex;
   padding: 20px;
   align-items: end;
+  margin: -20px;
 }
 .formSectionLeft {
   display: flex;
@@ -109,6 +110,8 @@ span {
 }
 
 .formTextTop {
+  display: flex;
+  flex-direction: column;
   font-weight: 600;
   font-size: larger;
   padding: 20px;
@@ -131,6 +134,17 @@ span {
 
 .containerButtonDown {
   display: flex;
+  flex-direction: column;
   flex: 1;
   background-color: hsl(0, 0%, 94%);
+}
+.button {
+  background-color: hsl(147, 50%, 47%);
+  padding: 8px 18px;
+  border: 2px bold back;
+  border-radius: 3px;
+  margin: 25px;
+}
+.buttonP {
+  margin: 25px;
 }
